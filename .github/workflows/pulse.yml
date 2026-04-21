@@ -1,12 +1,9 @@
 name: Matrix Pulse
 on:
   push:
-  schedule:
-    - cron: '0 */6 * * *'
 jobs:
   run:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: pip install numpy scipy
       - run: python organ_monitor.py
