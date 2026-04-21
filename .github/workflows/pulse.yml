@@ -1,9 +1,0 @@
-name: Matrix Pulse
-on:
-  push:
-jobs:
-  run:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - run: python organ_monitor.py
